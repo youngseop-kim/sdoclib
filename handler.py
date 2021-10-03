@@ -3,7 +3,7 @@ class ContextHandler:
     '''
     WHAT IS CONTEXT HANDLER ?
     context handler class handles contexts safely when executing expression,  
-    and local context key is based on instance's id (so each instance would be gueranteed independence)
+    and local context key is based on instance's id (so each instance would be guaranteed independence)
     but global context key is limited to variable "__global_key"
     REMEMBER! CANNOT ACCESS MAIN CONTEXT FROM EACH SUB CONTEXT (GLOBAL & LOCAL)
     
@@ -60,7 +60,7 @@ class InstanceHandler:
     WHAT IS INSTANCE HANDLER ?
     instance handler class resolves sequential document as instance,
     handles execution flow sequentially, 
-    and also provides essential keys to tranlate instance
+    and also provides essential keys to translate instance
     '''
 
     KEY_ID = 'id'

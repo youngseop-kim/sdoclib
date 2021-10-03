@@ -8,7 +8,7 @@
         {
             "id": "A",
             "display": "01. sequence",
-            "expression": "b=[1,2,3]\nc=3\n_copy_this_context('B')\n_globalize_variable_from_this_context('b')",
+            "expression": "_refer_this_context('B'); print(a); c=1; cc=2",
             "is_global_context": false,
             "next_id": "B",
             "contains": []
@@ -16,7 +16,7 @@
         {
             "id": "B",
             "display": "02. sequence",
-            "expression": "c+=1;print(c)",
+            "expression": "print(c); _refer_variable_from_context('A', 'cc'); print(c)",
             "is_global_context": false,
             "next_id": "",
             "contains": []

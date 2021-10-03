@@ -101,6 +101,9 @@ class DocumentTranslator:
         return self.__copy_variable(source_local_key, self.current_instance[self.__instance_handler.KEY_ID], variable)
     
     def _refer_this_context(self, destination_local_key: str) -> NoReturn:
+        if destination_local_key not in self.__context_handler.context_container.keys():
+            self.__context_handler._set_local_context(destination_local_key)
+
         return self.__refer_local_context(self.current_instance[self.__instance_handler.KEY_ID], destination_local_key)
 
     def _refer_variable_from_context(self, source_local_key: str, variable: str) -> NoReturn:
