@@ -1,0 +1,25 @@
+{
+    "id": "__trigger__",
+    "display": "global",
+    "expression": "a=1",
+    "is_global_context": true,
+    "next_id": "",
+    "contains": [
+        {
+            "id": "A",
+            "display": "01. sequence",
+            "expression": "b=[1,2,3]\nc=3\n_copy_this_context('B')\n_globalize_variable_from_this_context('b')",
+            "is_global_context": false,
+            "next_id": "B",
+            "contains": []
+        },
+        {
+            "id": "B",
+            "display": "02. sequence",
+            "expression": "c+=1;print(c)",
+            "is_global_context": false,
+            "next_id": "",
+            "contains": []
+        }
+    ]
+}
