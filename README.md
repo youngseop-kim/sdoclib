@@ -18,8 +18,6 @@ python : 3.6.12
 
 ## how to use ?
 
-...
-
 ##### Document Translator
 
 ​	document translator class translates sequential document with context handler & instance handler. also, provides built in functions on global context based on variable "built_in_functions".
