@@ -132,7 +132,7 @@ class DocumentTranslator:
         if instance_expression:
             try:
                 if instance_is_global_context:
-                    self.__context_handler._exec_is_global_context(instance_expression)
+                    self.__context_handler._exec_on_global_context(instance_expression)
 
                 else:
                     self.__context_handler._exec_on_local_context(instance_expression, instance_id)

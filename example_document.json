@@ -16,7 +16,15 @@
         {
             "id": "B",
             "display": "02. sequence",
-            "expression": "print(c); _refer_variable_from_context('A', 'cc'); print(c)",
+            "expression": "global a; a+=1; print(c); _refer_variable_from_context('A', 'cc'); print(c);",
+            "is_global_context": false,
+            "next_id": "C",
+            "contains": []
+        },
+        {
+            "id": "C",
+            "display": "02. sequence",
+            "expression": "print('aa', a)",
             "is_global_context": false,
             "next_id": "",
             "contains": []

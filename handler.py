@@ -49,7 +49,7 @@ class ContextHandler:
     def _set_local_context(self, local_key):
         self.__context_container[local_key] = {}
 
-    def _exec_is_global_context(self, expression):
+    def _exec_on_global_context(self, expression):
         exec(expression, self.__context_container[self.__global_key], None)
 
     def _exec_on_local_context(self, expression, local_key):
